@@ -9,11 +9,11 @@ This is a ready to build Docker template(image) to run PHP Laravel applications 
 - Step 1:
   - Copy the 'docker-compose.yml' and put it on your root folder as shown in here.
 - Step 2:
-  - Get a copy of '.env' file and paste it by renaming '.env.prod' 
-  - Copy the 'development' and paste it on your root folder.
+  - Get a copy of '.env' file and paste it by renaming '.env.prod' into root folder.
+  - Copy the 'development' folder and paste it on your root folder.
 - Step 3:
   - Go inside the 'development' folder.
-  - From the 'app.dockerfile' you can change the PHP version you want to install and other commands needs to run along with composer installing.
+  - From the 'app.dockerfile' you can change the PHP version you want to install in your application and other commands will install necessary libraries for the app.
   - From the 'web.dockerfile' will install the latest NGINX server. You can search the [Docker hub](https://hub.docker.com) for check other versions that you can install.
   - The 'vhost.conf' is the file which configure file path to the source file and php file for the web server. You don't need to change anything here.
 - Step 4:
